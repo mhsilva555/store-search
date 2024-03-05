@@ -1,0 +1,28 @@
+.modal-new-store .search-cities,
+.modal-edit-store .search-cities {
+    position: relative;
+}
+.modal-new-store .list-cities,
+.modal-edit-store .list-cities {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 100px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0 !important;
+}
+.modal-new-store .list-cities li,
+.modal-edit-store .list-cities li {
+    cursor: pointer;
+    padding: 4px 10px;
+    margin: 0 !important;
+    font-size: 0.9rem;
+}
+.modal-new-store .list-cities li:hover,
+.modal-edit-store .list-cities li:hover {
+    background: rgba(0,0,0,0.1);
+}

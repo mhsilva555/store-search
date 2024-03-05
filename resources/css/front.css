@@ -1,0 +1,102 @@
+:root {
+    --plugin-color-1: #007cba;
+}
+
+.store-search-container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.store-search-container .store-search-container-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: bold;
+}
+.store-search-container hr {
+    height: 3px;
+    background: var(--plugin-color-1);
+    border: 0 none;
+    margin: 0 0 15px 0;
+}
+.store-search-container .store-search-row {
+    display: flex;
+}
+.store-search-container .store-search-row a {
+    text-decoration: none;
+    color: var(--plugin-color-1);
+}
+.store-search-container .store-search-row > div {
+    flex-grow: 1;
+    width: 50%;
+}
+.store-search-row .store-search-filter span.first,
+.store-search-row .store-search-filter p {
+    color: var(--plugin-color-1);
+    font-weight: bold;
+}
+.store-search-row .store-search-filter p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.store-search-row .store-search-inputs {
+    margin: 1rem 0;
+    display: flex;
+    column-gap: 8px;
+}
+.store-search-row .store-search-inputs input {
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+#store-search-filter-results {
+    min-height: 180px;
+    max-height: 225px;
+    overflow-y: auto;
+    max-width: 90%;
+    padding: 25px 0 0 0;
+    list-style: none;
+}
+
+.store-search-row .store-search-inputs button {
+    padding: 15px;
+    border: none;
+    background: var(--plugin-color-1);
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#store-search-filter-results li:not(:last-child) {
+    margin-bottom: 20px;
+}
+#store-search-filter-results p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+}
+#store-search-filter-results span {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+input.empty {
+    border-color: red !important;
+    outline-color: red;
+}
+
+
+@media (max-width: 1024px) {
+    .store-search-container .store-search-row {
+        flex-direction: column;
+    }
+    .store-search-container .store-search-row > div {
+        width: 100%;
+    }
+    #store-search-filter-results {
+        min-height: auto;
+        max-width: 100%;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+}
